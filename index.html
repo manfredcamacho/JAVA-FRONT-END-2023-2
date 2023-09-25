@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>TP Integrador Frontend</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="title">
+          <p>Conf Bs As</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">La conferencia</a></li>
+            <li><a href="#">Los creadores</a></li>
+            <li><a href="#">El lugar y la fecha</a></li>
+            <li><a href="#">Convi&eacute;rtete en orador</a></li>
+            <li><a href="#">Comprar tickets</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="banner">
+          <div class="banner-text">
+            <h1>Conf Bs As</h1>
+            <p>
+              Bs As llega por primera vez a Argentina. Un evento para compartir
+              con nuestra comunidad el conocimiento y experiencia de los
+              expertos que están creando el futuro de Internet. Ven a conocer a
+              miembros del evento, a otros estudiantes de Codo a Codo y los
+              oradores de primer nivel que tenemos para ti. Te esperamos!
+            </p>
+            <button>Quiero ser orador</button>
+            <button>Comprar tickets</button>
+          </div>
+        </section>
+        <section class="speakers">
+          <p>conoce a los</p>
+          <h2>ORADORES</h2>
+
+          <div class="wrapper">
+            <div class="card">
+              <img src="img/steve.jpg" alt="Foto de Steve Jobs" />
+              <div class="card-text">
+                <span class="-badge"> Javascript </span>
+                <span class="-badge"> React </span>
+                <h3>Steve Jobs</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam voluptatum, voluptate, quibusdam, quia voluptas quod
+                  quos voluptatem quas quidem doloribus quae. Quisquam
+                  voluptatum, voluptate, quibusdam, quia voluptas quod quos
+                  voluptatem quas quidem doloribus quae.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/steve.jpg" alt="Foto de Steve Jobs" />
+              <div class="card-text">
+                <span class="-badge"> Javascript </span>
+                <span class="-badge"> React </span>
+                <h3>Steve Jobs</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam voluptatum, voluptate, quibusdam, quia voluptas quod
+                  quos voluptatem quas quidem doloribus quae. Quisquam
+                  voluptatum, voluptate, quibusdam, quia voluptas quod quos
+                  voluptatem quas quidem doloribus quae.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/steve.jpg" alt="Foto de Steve Jobs" />
+              <div class="card-text">
+                <span class="-badge"> Javascript </span>
+                <span class="-badge"> React </span>
+                <h3>Steve Jobs</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam voluptatum, voluptate, quibusdam, quia voluptas quod
+                  quos voluptatem quas quidem doloribus quae. Quisquam
+                  voluptatum, voluptate, quibusdam, quia voluptas quod quos
+                  voluptatem quas quidem doloribus quae.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="dates">
+          <img src="img/honolulu.jpg" alt="Foto de Honolulu" />
+          <div class="dates-text">
+            <h2>Bs As - Octubre</h2>
+            <p>
+              Buenos Aires es la provincia y localidad más grande del estado de
+              Argentina, en los Estados Unidos. Honolulu es la más sureña de
+              entre las principales ciudades estadounidenses. Aunque el nombre
+              de Honolulu se refiere al área urbana en la costa sureste de la
+              isla de Oahu, la ciudad y el condado de Honolulu han formado una
+              ciudad-condado consolidada que cubre toda la ciudad
+              (aproximadadmente 600 km² de superficie).
+            </p>
+            <button>Conocé más</button>
+          </div>
+        </section>
+        <section class="postulate">
+          <p>Conviértete en un</p>
+          <h2>ORADOR</h2>
+          <p>
+            Anótate como orador para dar una
+            <a href="#">charla ignite.</a> Cuéntanos de qué quieres hablar!
+          </p>
+          <div class="form">
+            <form id="speaker-form" action="./" method="POST">
+              <input type="text" name="name" placeholder="Nombre" />
+              <input type="text" name="lastname" placeholder="Apellido" />
+              <textarea
+                name="description"
+                placeholder="Sobre qué quieres hablar?"
+              ></textarea>
+              <small>Recuerda incluir un título para tu charla</small>
+              <button>Enviar</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary"
+              >Preguntas Frecuentes</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary"
+              >Cont&aacute;ctanos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Prensa</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary"
+              >Conferencias</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary"
+              >T&eacute;rminos y condiciones</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Privacidad</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary"
+              >Estudiantes</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
