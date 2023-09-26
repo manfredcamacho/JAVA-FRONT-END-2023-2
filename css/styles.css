@@ -1,0 +1,24 @@
+:root {
+  --dark-blue: #1c3643;
+  --light-blue: #1d5271;
+  --light-green: #97c940;
+  --dark-gray: #353a40;
+  --light-gray: #98968f;
+}
+
+footer {
+  background: linear-gradient(
+    90deg,
+    var(--dark-blue) 0%,
+    var(--light-blue) 100%
+  );
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  padding: 0 50px;
+}
