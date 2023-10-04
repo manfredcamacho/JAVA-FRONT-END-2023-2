@@ -1,9 +1,22 @@
 :root {
   --dark-blue: #1c3643;
   --light-blue: #1d5271;
+  --dark-green: #26a645;
   --light-green: #97c940;
   --dark-gray: #353a40;
   --light-gray: #98968f;
+}
+
+header nav {
+  background-color: var(--dark-gray);
+}
+
+header nav li:last-child a {
+  color: var(--dark-green);
+}
+
+main {
+  padding-top: 5em;
 }
 
 footer {
