@@ -6,6 +6,7 @@
   --dark-gray: #353a40;
   --light-gray: #98968f;
   --white: #f2f3f2;
+  --black: #000000;
 }
 
 header nav {
@@ -50,6 +51,21 @@ main .carousel .caption .btn-success {
 }
 main .carousel .caption .btn-outline-light {
   color: var(--white);
+}
+
+main .dates-text {
+  color: var(--white);
+  background-color: var(--dark-gray);
+}
+
+main .postulate a.dotted-link {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  color: var(--black);
+}
+
+main .postulate button.btn-success {
+  background-color: var(--light-green);
 }
 
 footer {

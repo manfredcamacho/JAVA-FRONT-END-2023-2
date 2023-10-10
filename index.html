@@ -92,7 +92,7 @@
           <button type="button" class="btn btn-success">Comprar tickets</button>
         </div>
       </div>
-      <section class="speakers container my-3">
+      <section class="speakers container mt-3">
         <div class="d-flex flex-column align-items-center text-uppercase">
           <p class="fs-6 text m-0">conoce a los</p>
           <h2 class="fs-1 text">ORADORES</h2>
@@ -163,9 +163,11 @@
           </div>
         </div>
       </section>
-      <section class="dates">
-        <img src="img/honolulu.jpg" alt="Foto de Honolulu" width="100px" />
-        <div class="dates-text">
+      <section class="dates d-flex flex-column mt-4">
+        <div class="">
+          <img src="img/honolulu.jpg" alt="Foto de Honolulu" class="w-100" />
+        </div>
+        <div class="dates-text p-3">
           <h2>Bs As - Octubre</h2>
           <p>
             Buenos Aires es la provincia y localidad más grande del estado de
@@ -176,53 +178,84 @@
             ciudad-condado consolidada que cubre toda la ciudad
             (aproximadadmente 600 km² de superficie).
           </p>
-          <button>Conocé más</button>
+          <button class="btn btn btn-outline-light">Conocé más</button>
         </div>
       </section>
-      <section class="postulate container">
-        <p>Conviértete en un</p>
-        <h2>ORADOR</h2>
+      <section class="postulate container mt-4">
+        <div class="d-flex flex-column align-items-center text-uppercase">
+          <p class="fs-6 m-0">conviértete en un</p>
+          <h2 class="fs-1">ORADOR</h2>
+        </div>
         <p>
           Anótate como orador para dar una
-          <a href="#">charla ignite.</a> Cuéntanos de qué quieres hablar!
+          <a class="dotted-link" href="#">charla ignite.</a> Cuéntanos de qué
+          quieres hablar!
         </p>
         <div class="form">
           <form id="speaker-form" action="./" method="POST">
-            <input type="text" name="name" placeholder="Nombre" />
-            <input type="text" name="lastname" placeholder="Apellido" />
-            <textarea
-              name="description"
-              placeholder="Sobre qué quieres hablar?"
-            ></textarea>
-            <small>Recuerda incluir un título para tu charla</small>
-            <button>Enviar</button>
+            <div class="row mb-3">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nombre"
+                  aria-label="Nombre"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Apellido"
+                  aria-label="Apellido"
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Sobre qué quieres hablar?"
+                ></textarea>
+              </div>
+              <small>Recuerda incluir un título para tu charla</small>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button type="button" class="btn btn-success s-block w-100">
+                  Enviar
+                </button>
+              </div>
+            </div>
           </form>
         </div>
       </section>
     </main>
-    <footer class="py-4">
+    <footer class="my-3 py-4">
       <div class="container">
         <div class="row">
           <ul class="nav">
-            <li class="nav-item col">
+            <li class="nav-item col-md col-12">
               <a href="#" class="px-0">Preguntas Frecuentes</a>
             </li>
-            <li class="nav-item col">
+            <li class="nav-item col-md col-12">
               <a href="#" class="px-0">Cont&aacute;ctanos</a>
             </li>
-            <li class="nav-item col">
+            <li class="nav-item col-md col-12">
               <a href="#" class="px-0">Prensa</a>
             </li>
-            <li class="nav-item col">
+            <li class="nav-item col-md col-12">
               <a href="#" class="px-0">Conferencias</a>
             </li>
-            <li class="nav-item col">
+            <li class="nav-item col-md col-12">
               <a href="#" class="px-0">T&eacute;rminos y condiciones</a>
             </li>
-            <li class="nav-item co l">
+            <li class="nav-item col-md col-12">
               <a href="#" class="px-0">Privacidad</a>
             </li>
-            <li class="nav-item col">
+            <li class="nav-item col-md col-12">
               <a href="#" class="px-0">Estudiantes</a>
             </li>
           </ul>
