@@ -5,6 +5,7 @@
   --light-green: #97c940;
   --dark-gray: #353a40;
   --light-gray: #98968f;
+  --white: #f2f3f2;
 }
 
 header nav {
@@ -16,7 +17,39 @@ header nav li:last-child a {
 }
 
 main {
-  padding-top: 5em;
+  margin-top: 78px;
+}
+
+main .carousel-item {
+  background-color: black;
+}
+
+main .carousel-item img {
+  opacity: 0.3;
+}
+
+main .carousel .caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: var(--white);
+  text-align: center;
+}
+
+main .carousel .caption .title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+main .carousel .caption .btn-success {
+  background-color: var(--dark-green);
+}
+main .carousel .caption .btn-outline-light {
+  color: var(--white);
 }
 
 footer {
@@ -25,13 +58,13 @@ footer {
     var(--dark-blue) 0%,
     var(--light-blue) 100%
   );
-  color: white;
+  color: var(--white);
   padding: 20px;
   text-align: center;
 }
 
 footer a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   padding: 0 50px;
 }
