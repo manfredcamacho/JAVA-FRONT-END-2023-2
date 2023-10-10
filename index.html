@@ -13,7 +13,7 @@
     <title>TP Integrador Frontend</title>
   </head>
   <body>
-    <header>
+    <header id="top">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">
@@ -38,19 +38,23 @@
           <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
               <li class="nav-item active">
-                <a href="#" class="nav-link active"
+                <a href="#top-section" class="nav-link active"
                   >La conferencia
                   <span class="visually-hidden">(current)</span></a
                 >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Los oradores</a>
+                <a href="#speakers-section" class="nav-link">Los oradores</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">El lugar y la fecha</a>
+                <a href="#dates-section" class="nav-link"
+                  >El lugar y la fecha</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Convi&eacute;rtete en orador</a>
+                <a href="#postulate-section" class="nav-link"
+                  >Convi&eacute;rtete en orador</a
+                >
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">Comprar tickets</a>
@@ -61,11 +65,7 @@
       </nav>
     </header>
     <main>
-      <div
-        id="carouselExampleSlidesOnly"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
+      <div id="top-section" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="img/ba1.jpg" class="d-block w-100" alt="..." />
@@ -92,7 +92,7 @@
           <button type="button" class="btn btn-success">Comprar tickets</button>
         </div>
       </div>
-      <section class="speakers container mt-3">
+      <section id="speakers-section" class="speakers container mt-3">
         <div class="d-flex flex-column align-items-center text-uppercase">
           <p class="fs-6 text m-0">conoce a los</p>
           <h2 class="fs-1 text">ORADORES</h2>
@@ -163,7 +163,7 @@
           </div>
         </div>
       </section>
-      <section class="dates d-flex flex-column mt-4">
+      <section id="dates-section" class="dates d-flex flex-column mt-4">
         <div class="">
           <img src="img/honolulu.jpg" alt="Foto de Honolulu" class="w-100" />
         </div>
@@ -181,7 +181,7 @@
           <button class="btn btn btn-outline-light">Conocé más</button>
         </div>
       </section>
-      <section class="postulate container mt-4">
+      <section id="postulate-section" class="postulate container mt-4">
         <div class="d-flex flex-column align-items-center text-uppercase">
           <p class="fs-6 m-0">conviértete en un</p>
           <h2 class="fs-1">ORADOR</h2>
