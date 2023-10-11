@@ -46,6 +46,10 @@ main .carousel .caption .title {
   margin-bottom: 1.25rem;
 }
 
+main .carousel .caption .text {
+  font-size: 0.8rem;
+}
+
 main .carousel .caption .btn-success,
 main .carousel .caption .btn-outline-light {
   font-size: 0.7rem;
@@ -96,6 +100,10 @@ footer a {
 }
 
 @media (min-width: 576px) {
+  main .caption .text {
+    font-size: 1.25rem;
+  }
+
   main .carousel .caption .btn-success,
   main .carousel .caption .btn-outline-light {
     font-size: 1rem;
@@ -107,7 +115,7 @@ footer a {
   }
   main .carousel .caption {
     width: 50%;
-    transform: translate(-10%, -10%);
+    transform: translate(-10%, -30%);
     color: var(--white);
     text-align: right;
   }
@@ -140,5 +148,9 @@ footer a {
 @media (min-width: 992px) {
   main .dates-text {
     font-size: 1rem;
+  }
+
+  main .carousel .caption {
+    transform: translate(-10%, 0);
   }
 }
