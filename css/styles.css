@@ -31,19 +31,24 @@ main .carousel-item img {
 
 main .carousel .caption {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 15%;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 1rem;
   color: var(--white);
   text-align: center;
 }
 
 main .carousel .caption .title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.25rem;
+}
+
+main .carousel .caption .btn-success,
+main .carousel .caption .btn-outline-light {
+  font-size: 0.7rem;
 }
 
 main .carousel .caption .btn-success {
@@ -51,6 +56,11 @@ main .carousel .caption .btn-success {
 }
 main .carousel .caption .btn-outline-light {
   color: var(--white);
+}
+
+main .dates {
+  display: flex;
+  flex-direction: column;
 }
 
 main .dates-text {
@@ -83,4 +93,52 @@ footer a {
   color: var(--white);
   text-decoration: none;
   padding: 0 50px;
+}
+
+@media (min-width: 576px) {
+  main .carousel .caption .btn-success,
+  main .carousel .caption .btn-outline-light {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  main .top-section {
+    max-height: 100vh;
+  }
+  main .carousel .caption {
+    width: 50%;
+    transform: translate(-10%, -10%);
+    color: var(--white);
+    text-align: right;
+  }
+
+  main .carousel .caption .title {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  main .carousel .caption .btn-success,
+  main .carousel .caption .btn-outline-light {
+    font-size: 1rem;
+  }
+
+  main .dates {
+    display: flex;
+    flex-direction: row;
+  }
+
+  main .dates-text {
+    font-size: 0.7rem;
+  }
+
+  main .dates-text,
+  main .dates-img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  main .dates-text {
+    font-size: 1rem;
+  }
 }
