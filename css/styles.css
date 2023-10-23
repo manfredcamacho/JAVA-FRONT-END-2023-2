@@ -13,12 +13,16 @@ header nav {
   background-color: var(--dark-gray);
 }
 
+header nav .navbar-brand img {
+  width: 60px;
+}
+
 header nav li:last-child a {
   color: var(--dark-green);
 }
 
 main {
-  margin-top: 78px;
+  margin-top: 61px;
 }
 
 main .carousel-item {
@@ -41,13 +45,15 @@ main .carousel .caption {
 }
 
 main .carousel .caption .title {
-  font-size: 2rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  margin-bottom: 1.25rem;
+
+  margin-bottom: 10px;
 }
 
 main .carousel .caption .text {
-  font-size: 0.8rem;
+  font-size: 0.65rem;
+  margin-bottom: 0;
 }
 
 main .carousel .caption .btn-success,
@@ -100,8 +106,23 @@ footer a {
 }
 
 @media (min-width: 576px) {
-  main .caption .text {
+  header nav .navbar-brand img {
+    width: 90px;
+  }
+
+  main {
+    margin-top: 78px;
+  }
+
+  main .carousel .caption .title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+  }
+
+  main .carousel .caption .text {
     font-size: 1.25rem;
+    margin-bottom: 1.5rem;
   }
 
   main .carousel .caption .btn-success,
@@ -109,13 +130,15 @@ footer a {
     font-size: 1rem;
   }
 }
+
 @media (min-width: 768px) {
   main .top-section {
     max-height: 100vh;
   }
+
   main .carousel .caption {
-    width: 50%;
-    transform: translate(-10%, -30%);
+    width: 75%;
+    transform: translate(-40%, -40%);
     color: var(--white);
     text-align: right;
   }
@@ -123,6 +146,10 @@ footer a {
   main .carousel .caption .title {
     font-size: 2rem;
     font-weight: 700;
+  }
+
+  main .carousel .caption .text {
+    font-size: 1.25rem;
   }
 
   main .carousel .caption .btn-success,
@@ -146,11 +173,20 @@ footer a {
 }
 
 @media (min-width: 992px) {
-  main .dates-text {
-    font-size: 1rem;
+  main .carousel .caption {
+    width: 65%;
+    transform: translate(-30%, -15%);
   }
 
-  main .carousel .caption {
-    transform: translate(-10%, 0);
+  main .carousel .caption .title {
+    font-size: 3rem;
+  }
+
+  main .carousel .caption .text {
+    font-size: 1.3rem;
+  }
+
+  main .dates-text {
+    font-size: 1rem;
   }
 }
