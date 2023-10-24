@@ -7,6 +7,9 @@
   --light-gray: #98968f;
   --white: #f2f3f2;
   --black: #000000;
+  --border-blue: #1f8bff;
+  --border-green: #30a9bc;
+  --border-gold: #ffc107;
 }
 
 header nav {
@@ -19,6 +22,10 @@ header nav .navbar-brand img {
 
 header nav li:last-child a {
   color: var(--dark-green);
+}
+
+header nav li:last-child a.active {
+  color: var(--light-green) !important;
 }
 
 main {
@@ -84,8 +91,28 @@ main .postulate a.dotted-link {
   color: var(--black);
 }
 
-main .postulate button.btn-success {
+main button.btn-success {
   background-color: var(--light-green);
+}
+
+main .buy-tickets .category-box {
+  border: 1px solid var(--light-gray);
+}
+
+main .buy-tickets .category-box small {
+  color: var(--light-gray);
+}
+
+main .buy-tickets .category-box.blue {
+  border: 1px solid var(--border-blue);
+}
+
+main .buy-tickets .category-box.green {
+  border: 1px solid var(--border-green);
+}
+
+main .buy-tickets .category-box.gold {
+  border: 1px solid var(--border-gold);
 }
 
 footer {
@@ -169,6 +196,12 @@ footer a {
   main .dates-text,
   main .dates-img {
     width: 50%;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 }
 
