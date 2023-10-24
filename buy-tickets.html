@@ -95,22 +95,29 @@
           <h2 class="fs-1 text-uppercase">VALOR DE TICKET $200</h2>
         </div>
         <div class="form mt-4">
-          <form id="speaker-form" action="./" method="POST">
+          <form id="buy-tickets-form">
             <div class="row mb-3">
               <div class="col">
                 <input
                   type="text"
                   class="form-control"
+                  id="name"
                   placeholder="Nombre"
                   aria-label="Nombre"
+                  required
+                  maxlength="20"
+                  autofocus
                 />
               </div>
               <div class="col">
                 <input
                   type="text"
                   class="form-control"
+                  id="lastname"
                   placeholder="Apellido"
                   aria-label="Apellido"
+                  required
+                  maxlength="20"
                 />
               </div>
             </div>
@@ -119,8 +126,10 @@
                 <input
                   type="email"
                   class="form-control"
+                  id="email"
                   placeholder="Correo"
                   aria-label="Correo electrónico"
+                  required
                 />
               </div>
             </div>
@@ -133,12 +142,15 @@
                   class="form-control"
                   placeholder="Cantidad"
                   aria-label="Cantidad"
+                  required
+                  min="0"
+                  max="20"
                 />
               </div>
               <div class="col">
                 <label class="form-label" for="category">Categoria</label>
-                <select id="category" class="form-select">
-                  <option selected>Seleccionar</option>
+                <select id="category" class="form-select" required>
+                  <option value="" selected disabled>Seleccionar</option>
                   <option value="1">Estudiante</option>
                   <option value="2">Trainee</option>
                   <option value="3">Junior</option>
@@ -146,7 +158,7 @@
               </div>
             </div>
             <div class="alert alert-primary mt-3" role="alert">
-              Total a pagar: $
+              Total a pagar: $ <span id="total">0</span>
             </div>
             <div class="row">
               <div class="col">
