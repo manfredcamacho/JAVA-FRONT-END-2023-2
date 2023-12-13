@@ -37,9 +37,6 @@ main .carousel .caption .btn-outline-light {
 main .carousel .caption .btn-success {
   background-color: var(--dark-green);
 }
-main .carousel .caption .btn-outline-light {
-  color: var(--white);
-}
 
 main .dates {
   display: flex;
