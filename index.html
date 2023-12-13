@@ -190,40 +190,64 @@
             quieres hablar!
           </p>
         </div>
+        <div id="successAlert" class="alert alert-success d-none" role="alert">
+          ✅ Te registraste como Orador!
+        </div>
+        <div id="errorAlert" class="alert alert-danger d-none" role="alert">
+          ❌ Ocurrío un error al registrarte como Orador! Por favor, intenta
+          nuevamente.
+        </div>
         <div class="form">
-          <form id="speaker-form" action="./" method="POST">
+          <form id="speaker-form">
             <div class="row mb-3">
               <div class="col">
                 <input
+                  id="name"
                   type="text"
                   class="form-control"
                   placeholder="Nombre"
                   aria-label="Nombre"
+                  required
                 />
               </div>
               <div class="col">
                 <input
+                  id="lastName"
                   type="text"
                   class="form-control"
                   placeholder="Apellido"
                   aria-label="Apellido"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <input
+                  id="email"
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  aria-label="Email"
+                  required
                 />
               </div>
             </div>
             <div class="row mb-3">
               <div class="col">
                 <textarea
+                  id="topic"
                   class="form-control"
-                  id="exampleFormControlTextarea1"
                   rows="5"
                   placeholder="Sobre qué quieres hablar?"
+                  required
                 ></textarea>
               </div>
               <small>Recuerda incluir un título para tu charla</small>
             </div>
             <div class="row">
               <div class="col">
-                <button type="button" class="btn btn-success s-block w-100">
+                <button type="submit" class="btn btn-success s-block w-100">
                   Enviar
                 </button>
               </div>
@@ -266,6 +290,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="js/app.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
