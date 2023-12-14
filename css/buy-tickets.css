@@ -1,27 +1,3 @@
-main button.btn-success {
-  background-color: var(--light-green);
-}
-
-main .buy-tickets .category-box {
-  border: 1px solid var(--light-gray);
-}
-
-main .buy-tickets .category-box small {
-  color: var(--light-gray);
-}
-
-main .buy-tickets .category-box.blue {
-  border: 1px solid var(--border-blue);
-}
-
-main .buy-tickets .category-box.green {
-  border: 1px solid var(--border-green);
-}
-
-main .buy-tickets .category-box.gold {
-  border: 1px solid var(--border-gold);
-}
-
 @media (min-width: 768px) {
   footer {
     position: fixed;

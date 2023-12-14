@@ -18,13 +18,15 @@ form.addEventListener("submit", (event) => {
     },
   })
     .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
       return response.json();
     })
     .then((data) => {
       successAlert.classList.remove("d-none");
       errorAlert.classList.add("d-none");
       autocloseAlert();
-      console.log(data);
       form.reset();
     })
     .catch((err) => {
