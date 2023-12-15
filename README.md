@@ -4,6 +4,10 @@
 
 https://earnest-rolypoly-cd4082.netlify.app/
 
+## Video Demo
+
+https://www.youtube.com/watch?v=h-hgWX4VrgE
+
 ## Objetivo
 
 Recrear la siguiente página de inicio utilizando HTML, CSS y Bootstrap
