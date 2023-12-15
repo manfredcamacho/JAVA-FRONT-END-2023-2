@@ -120,64 +120,82 @@
     </footer>
 
     <!-- Edit Modal -->
-    <div class="modal fade" id="editModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <!-- Edit modal content -->
-          <div class="modal-header">
-            <h4 class="modal-title">Edit Speaker</h4>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+    <div class="modal modal-sheet" role="dialog" id="editModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-3 shadow">
+          <div class="modal-body p-4 text-center">
+            <h5 class="mb-0">Editar Orador</h5>
+            <div class="form mt-4">
+              <div class="row mb-3">
+                <div class="col">
+                  <input
+                    id="edit-name"
+                    type="text"
+                    class="form-control"
+                    placeholder="Nombre"
+                    aria-label="Nombre"
+                    required
+                    maxlength="20"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    id="edit-lastName"
+                    type="text"
+                    class="form-control"
+                    placeholder="Apellido"
+                    aria-label="Apellido"
+                    required
+                    maxlength="20"
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <input
+                    id="edit-email"
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                    aria-label="Email"
+                    required
+                    disabled
+                    maxlength="50"
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <input
+                    id="edit-topic"
+                    type="text"
+                    class="form-control"
+                    placeholder="Tema"
+                    required
+                    maxlength="50"
+                  ></input>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="modal-body">
-            <!-- Edit form content -->
-            <!-- ... -->
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save Changes</button>
+          <div class="modal-footer flex-nowrap p-0">
+            <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 border-end" onclick="updateSpeaker()"><strong>Actualizar Datos</strong></button>
+            <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0" data-bs-dismiss="modal">Cancelar</button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Delete Modal -->
-    <div class="modal fade" id="deleteModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <!-- Delete modal content -->
-          <div class="modal-header">
-            <h4 class="modal-title">Delete Speaker</h4>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+    <div class="modal modal-sheet" role="dialog" id="deleteModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-3 shadow">
+          <div class="modal-body p-4 text-center">
+            <h5 class="mb-0">¿Estás seguro que deseas eliminar este orador?</h5>
           </div>
-          <div class="modal-body">
-            <!-- Delete confirmation message content -->
-            <!-- ... -->
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Cancel
-            </button>
-            <button type="button" class="btn btn-danger">Delete</button>
+          <div class="modal-footer flex-nowrap p-0">
+            <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 border-end link-danger" onclick="deleteSpeaker()"><strong>Si, eliminar</strong></button>
+            <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0" data-bs-dismiss="modal">Cancelar</button>
           </div>
         </div>
       </div>
