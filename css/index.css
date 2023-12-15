@@ -54,7 +54,7 @@ main .postulate a.dotted-link {
   color: var(--black);
 }
 
-main button.btn-success {
+main .btn-success {
   background-color: var(--light-green);
 }
 
