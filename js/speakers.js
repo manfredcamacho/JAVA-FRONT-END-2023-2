@@ -20,6 +20,50 @@ let fillSpeakerModal = (id) => {
   document.getElementById("edit-topic").value = currentSpeaker.topic;
 };
 
+let updateSpeaker = () => {
+  let id = currentSpeaker.id;
+  let name = document.getElementById("edit-name").value;
+  let lastName = document.getElementById("edit-lastName").value;
+  let topic = document.getElementById("edit-topic").value;
+  let speaker = {
+    name: name,
+    lastName: lastName,
+    topic: topic,
+  };
+  fetch(`http://localhost:8080/api/speaker?id=${id}`, {
+    method: "PUT",
+    body: JSON.stringify(speaker),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      let { name, lastName, email, topic } = data.data;
+      let speakerRow = document.getElementById(`speaker-${id}`);
+      speakerRow.innerHTML = `
+        <td>${name}</td>
+        <td>${lastName}</td>
+        <td>${email}</td>
+        <td>${topic}</td>
+        <td>
+          <button type="button" class="btn btn-labeled btn-primary" onclick="fillSpeakerModal(${id})" data-bs-toggle="modal" data-bs-target="#editModal"><span class="btn-label"><i class="fas fa-edit"></i></span> Editar</button>
+          <button type="button" class="btn btn-labeled btn-danger" onclick="setCurrentSpeaker(${id})" data-bs-toggle="modal" data-bs-target="#deleteModal"><span class="btn-label"><i class="fas fa-trash-alt"></i></span> Eliminar</a>
+        </td>
+      `;
+      editModal.hide();
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  editModal.hide();
+};
+
 let deleteSpeaker = () => {
   let id = currentSpeaker.id;
   fetch(`http://localhost:8080/api/speaker?id=${id}`, {
@@ -29,10 +73,6 @@ let deleteSpeaker = () => {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
     })
     .catch((err) => {
       console.log(err);
